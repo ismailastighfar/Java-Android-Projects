@@ -18,7 +18,8 @@
         android:textAlignment="center"
         android:gravity="center"
         android:background="@drawable/text_view_style"
-        android:text="" />
+        android:text=""
+        />
 
     <Button
         android:id="@+id/btnSearch"
