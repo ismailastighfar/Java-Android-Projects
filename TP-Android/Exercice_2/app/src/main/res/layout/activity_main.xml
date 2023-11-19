@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+    <!-- Amount Section -->
+    <LinearLayout
+        android:id="@+id/amountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/editTextAmount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="15dp"
+            android:hint="Enter Amount" />
+
+        <Spinner
+            android:id="@+id/spinnerCurrency"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="13dp"
+            />
+        <ImageView
+            android:id="@+id/arrowImageView"
+            android:layout_width="24dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_arrow_down"
+            android:layout_gravity="center"
+            android:background="@color/white"
+             />
+    </LinearLayout>
+
+    <!-- Result Section -->
+    <LinearLayout
+        android:id="@+id/resultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/amountLayout">
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="15dp"
+            android:background="@android:drawable/editbox_background_normal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="Dirham Marocain"
+            android:padding="15dp"
+            android:background="@android:drawable/editbox_background_normal" />
+    </LinearLayout>
+
+    <!-- Spacer -->
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/resultLayout"
+        android:layout_marginTop="16dp" />
+
+    <!-- Buttons Section -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/space">
+
+        <Button
+            android:id="@+id/buttonConvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/btn"/>
+
+        <Button
+            android:id="@+id/buttonClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/btn"
+           />
+    </LinearLayout>
+</RelativeLayout>

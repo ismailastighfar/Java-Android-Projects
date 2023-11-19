@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Convertisseur</string>
+    <string-array name="currency_options">
+        <item>Euro</item>
+        <item>Dollar Americain</item>
+        <item>Dollar Canadien</item>
+    </string-array>
+</resources>
