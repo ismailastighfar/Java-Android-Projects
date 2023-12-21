@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/bgLight"
+    tools:context=".MainActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrofit"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Line underneath the header -->
+    <View
+        android:id="@+id/dividerLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_below="@id/textViewHeader"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Space -->
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/dividerLine"/>
+
+    <TextView
+        android:id="@+id/textViewIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:layout_above="@+id/textViewNameLabel"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewIdLabel"
+        android:layout_above="@id/editTextName"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        />
+
+    <!-- Name Label and EditText -->
+    <TextView
+        android:id="@+id/textViewNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_below="@id/editTextId"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewNameLabel"
+        android:layout_below="@id/space"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="50dp"
+        />
+
+    <!-- Date of Birth Label and EditText -->
+    <TextView
+        android:id="@+id/textViewCountryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:layout_below="@id/editTextName"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/editTextCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewCountryLabel"
+        android:layout_below="@id/editTextName"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="2dp"
+        />
+
+    <!-- Space -->
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/editTextCountry"/>
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List"
+        android:backgroundTint="@color/bgBtn"
+        android:layout_below="@id/space2"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create"
+        android:backgroundTint="@color/bgBtn"
+        android:layout_below="@id/space2"
+        android:layout_toEndOf="@id/btnList"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+       />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:backgroundTint="@color/bgBtn"
+        android:layout_below="@id/space2"
+        android:layout_toEndOf="@id/btnCreate"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:backgroundTint="@color/bgBtn"
+        android:layout_below="@id/space2"
+        android:layout_toEndOf="@id/btnUpdate"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+       />
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/editTextCountry"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/space3"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        />
+
+
+
+</RelativeLayout>

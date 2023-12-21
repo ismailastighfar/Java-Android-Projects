@@ -24,7 +24,6 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RepositoryActivity extends AppCompatActivity {
-
     List<String> data = new ArrayList<>();
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {

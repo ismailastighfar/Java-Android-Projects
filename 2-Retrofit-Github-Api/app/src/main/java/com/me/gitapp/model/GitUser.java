@@ -1,7 +1,6 @@
 package com.me.gitapp.model;
 
 import com.google.gson.annotations.SerializedName;
-
 public class GitUser {
     public int id;
     public String login;
